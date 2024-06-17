@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Html DOM events</title>
+</head>
+<body>
+    <h1>Html DOM events</h1>
+    <h2>Html</h2>
+    <h3>HTMLL</h3>
+    <form id="form">
+        <label for="A">A=</label>
+        <input type="text" name="A" id="A">
+        <br>
+        <label for="B">B=</label>
+        <input type="text" name="B" id="B">
+        <br>
+        <label for="C">C=</label>
+        <input type="text" name="C" id="C">
+    </form>
+    <button onclick="myFunction(); myFunction2();">Click Me</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <P id="demo3"></P>
+
+    <script>
+        function myFunction() {
+            document.getElementById('demo1').innerText = parseFloat(document.getElementById('A').value) +
+                parseFloat(document.getElementById('B').value) +
+                parseFloat(document.getElementById('C').value);
+        }
+        
+        function myFunction2() {
+            document.getElementById('demo2').innerText = parseFloat(document.getElementById('A').value) *
+                parseFloat(document.getElementById('B').value) *
+                parseFloat(document.getElementById('C').value);
+        }
+        /*jer araferi
+        function myFunction3() {
+            document.getElementById('demo3').innerText = parseFloat(document.getElementById('A').value) 
+                parseFloat(document.getElementById('B').value) 
+                parseFloat(document.getElementById('C').value);
+        }
+        */
+</script>
+</body>
+</html>
+
